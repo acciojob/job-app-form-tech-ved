@@ -1,16 +1,69 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Job Application Form</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <form method="POST">
+
+        <!-- Name -->
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+        <br><br>
+
+        <!-- Gender -->
+        <label>Gender</label><br>
+        <input type="radio" id="male" name="gender" required>
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" required>
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" required>
+        <label for="other">Other</label>
+        <br><br>
+
+        <!-- Laptop Brands -->
+        <label for="laptop">Laptop Brands</label>
+        <select id="laptop">
+            <option value="">--Select--</option>
+            <option value="Apple">Apple</option>
+            <option value="Asus">Asus</option>
+            <option value="HP">HP</option>
+        </select>
+        <br><br>
+
+        <!-- Age -->
+        <label for="age">Age</label>
+        <input type="number" id="age" required>
+        <br><br>
+
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" required>
+        <br><br>
+
+        <!-- Password -->
+        <label for="password">Password</label>
+        <input type="password" id="password" required>
+        <br><br>
+
+        <!-- Portfolio URL -->
+        <label for="portfolio">Portfolio URL</label>
+        <input type="url" id="portfolio">
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+
+    </form>
 
 </body>
-
 </html>
